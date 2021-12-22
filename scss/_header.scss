@@ -1,0 +1,141 @@
+
+.header {
+      background:  #07080F;
+      padding: 0 10px;
+      border-bottom: 1px solid#808080;
+      position: fixed;
+      z-index: 3;
+      width: 100%;
+      max-height: 140px;
+      &__body {
+            padding: 22px 2%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            
+      }
+
+      // .header__logo
+
+      &__logo {
+            display: flex;
+            color: #fff;
+            align-items: center;
+      }
+
+      // .header__menu
+
+      &__menu {
+            flex-wrap: wrap;
+            color: #AEAEAE;
+            font-family: "axiforma";
+            
+      }
+
+      // .header__social
+
+      &__social {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+      }
+
+      // .header__lang
+
+      &__lang {
+            margin: 0 40px;
+            color: #fff;
+            font-family: 'Axiforma-Light';
+            @media(max-width:422px){
+                  margin: 0 15px;
+            }
+      }
+
+      // .header__userIcon
+
+      &__userIcon {}
+     
+}
+
+.logo {
+
+      // .logo__img
+
+      &__img {}
+
+      // .logo__title
+
+      &__title {
+            margin: 0 8.5px;
+            font-size: 18px;
+            font-family: 'adineue PRO';
+
+            a {
+                  color: #fff;
+            }
+      }
+}
+
+.menu {
+
+      // .menu__ul
+
+      &__ul {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            font-family: 'Axiforma-Light';
+
+            a {
+                  color: #fff;
+
+            }
+            @media(max-width:770px){
+                  display: none;
+                  }
+      }
+
+      // .menu__li
+
+      &__li {
+            margin-right: 80px;
+            
+            &:last-child{
+                  margin-right: 0;
+            }
+            span {
+                  color: #21D4FD;
+
+            }
+           
+            @media(max-width:1322px){
+                  margin-right: 40px;
+            }
+            @media(max-width:1062px){
+                  margin-right: 15px;
+            }
+            @media(max-width: 905px){
+                  margin-bottom: 10px;
+            }
+            // @media(max-width: 500px){
+            //       margin: 0px;
+            // }
+      }
+
+}
+
+.social {
+
+      
+
+      &__icon {
+            margin: 0 10px;
+
+            @media(max-width:770px){
+                  display: none;
+                  }
+      }
+}
+

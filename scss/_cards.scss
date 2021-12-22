@@ -1,0 +1,171 @@
+.cards {
+      color: #fff;
+      position: relative;
+
+      &::after {
+            content: "";
+            position: absolute;
+            left: -20%;
+            bottom: -60%;
+            background: url("../img/Completed Bounty Hunt & Airdrops/blurleft.png") no-repeat center center;
+            z-index: 2;
+            height: 100%;
+            width: 100%;
+            transform: translateX(-50%);
+            z-index: 1;
+            filter: blur(50px);
+
+            @media(max-width:670px) {
+                  width: 50%;
+            }
+      }
+
+      &::before {
+            content: "";
+            position: absolute;
+            right: -20%;
+            bottom: -60%;
+            background: url("../img/Completed Bounty Hunt & Airdrops/blurright.png") no-repeat center center;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            transform: translateX(50%);
+            z-index: 1;
+            filter: blur(50px);
+
+            @media(max-width:670px) {
+                  width: 50%;
+            }
+      }
+
+      &__body {
+            display: flex;
+            flex-direction: column;
+
+
+      }
+
+      // .Airdrops__title
+
+      &__title {
+            font-family: "adineue PRO";
+            font-weight: 700;
+            font-size: 41px;
+            margin: 70px 0px;
+
+      }
+
+      // .Airdrops__itemsrow
+
+      &__itemsrow {
+            display: flex;
+            flex-wrap: wrap;
+
+            @media(max-width:770px) {
+                  flex-direction: column;
+                  align-items: center;
+            }
+
+
+      }
+
+      &__button {
+            display: block;
+            margin: 50px auto;
+            padding: 14px 22px;
+            width: 280px;
+            height: 66px;
+            border: 1px solid #FFFFFF;
+            border-radius: 11px;
+            background: #0A0914;
+            color: #fff;
+            font-weight: 700;
+            font-size: 20px;
+            font-family: 'adineue PRO';
+
+            &:hover {
+                  background: linear-gradient(265.34deg, #21D4FD 21.26%, #E40ECF 66.55%);
+                  color: #0A0914;
+
+            }
+
+            z-index:2;
+      }
+
+      &__item {
+            flex: 0 0 32%;
+            margin: 0 15px 30px 0px;
+            max-width: 373px;
+            z-index: 1;
+
+            &:hover img {
+                  transform: scale(1.2);
+                  transition: transform 1s ease-in-out;
+            }
+
+            @media(max-width:1200px) {
+                  width: calc(100%/3 - 20px);
+                  max-width: 100%;
+            }
+
+            @media(max-width:1050px) {
+                  flex: 0 0 40%;
+            }
+
+            @media(max-width:770px) {
+                  flex: 0 0 50%;
+                  min-width: 350px;
+                  margin: 0 0px 30px 0px;
+            }
+            
+
+      }
+
+      &__picture-container {
+            max-width: 373px;
+            border-radius: 5px;
+            overflow: hidden;
+
+            @media(max-width:650px) {
+                 width: 350px;
+            }
+            @media(max-width:366px) {
+                  width: 300px;
+             }
+            
+
+      }
+
+      &__picture {
+            width: 100%;
+
+
+      }
+
+      // .item__title
+
+      &__item-title {
+            margin: 15px 0;
+            font-family: "adineue PRO";
+            font-weight: 700;
+            font-size: 24px;
+
+      }
+
+      // .item__text
+
+      &__item-text {
+            max-width: 373px;
+            font-size: 16px;
+            font-family: 'Axiforma-Light';
+            line-height: 21px;
+            @media(max-width:366px) {
+                  width: 290px;
+             }
+
+      }
+
+
+
+
+}
